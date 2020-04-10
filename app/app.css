@@ -23,3 +23,9 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+.cardH {
+  background-color:  #b52e31;
+  size: auto;
+  border-radius: 13px;
+}
