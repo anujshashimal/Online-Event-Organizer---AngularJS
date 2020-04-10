@@ -8,15 +8,14 @@ myApp.controller("myController", function ($scope) {
     $scope.clickedEvent = {};
 
     $scope.events = [
-        {eventDescitption : "anuj", DateNTime: "12/12/12"}
+        // {eventDescitption : "anuj", DateNTime: "12/12/12"}
     ];
 
     $scope.saveEvent = function () {
-    console.log('Event Saved!')
+        console.log('Event Saved!')
         $scope.events.push($scope.newEvent);
         $scope.newEvent = {};
         $scope.EventMsg = "New Event Added!";
-
     }
 
     $scope.selectEvent = function (event) {
@@ -26,7 +25,6 @@ myApp.controller("myController", function ($scope) {
 
     $scope.updateEvent = function () {
         $scope.EventMsg = "Event Updated Successfually!"
-
     }
 
     $scope.clearMsg = function(){
@@ -36,7 +34,11 @@ myApp.controller("myController", function ($scope) {
     $scope.deleteEvent = function () {
         $scope.events.splice($scope.events.indexOf($scope.clickedEvent), 1);
         $scope.EventMsg = "Event Successfually Deleted!"
-
     }
+
+    $scope.sortDate = function(comment) {
+        var date = new Date(comment.created);
+        return date;
+    };
 
 })
