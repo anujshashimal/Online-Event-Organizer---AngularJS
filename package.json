@@ -8,7 +8,9 @@
   "dependencies": {
     "angular": "^1.7.5",
     "angular-loader": "^1.7.5",
+    "angular-material": "^1.1.21",
     "angular-route": "^1.7.5",
+    "angularjs-datetime-picker": "^0.1.16",
     "html5-boilerplate": "0.0.1"
   },
   "devDependencies": {

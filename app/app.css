@@ -29,3 +29,9 @@
   size: auto;
   border-radius: 13px;
 }
+
+
+.datepickerdemoCalendar {
+  /** Demo styles for mdCalendar. */ }
+.datepickerdemoCalendar label {
+  font-size: x-small; }
